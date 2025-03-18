@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo">
+
+
+    <!-- Selector de la hora para la alarma -->
+    <TimePicker
+        android:id="@+id/timePickerAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="clock"
+        android:layout_gravity="center"/>
+
+    <!-- Texto que muestra la hora sugerida para acostarse -->
+    <TextView
+        android:id="@+id/tvRecommendedSleepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora sugerida para acostarse"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Texto que muestra la hora para dormir máxima -->
+    <TextView
+        android:id="@+id/tvMaxSleepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora para dormir máxima"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Botón para seleccionar el tono de alarma -->
+    <Button
+        android:id="@+id/btnSelectTone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Tono de Alarma"
+        android:layout_gravity="center"/>
+
+    <!-- Botón para confirmar la alarma -->
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Alarma"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

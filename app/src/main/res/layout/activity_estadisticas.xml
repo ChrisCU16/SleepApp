@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo">
+
+    <!-- Leyenda para el gráfico de barras -->
+    <TextView
+        android:id="@+id/leyendaGraficoBarras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas de sueño por día de la semana"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- Gráfico de barras -->
+    <com.example.sleepapp.GraficoBarras
+        android:id="@+id/graficoBarras"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center" />
+
+    <!-- Leyenda debajo del gráfico de barras (días de la semana) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunes"
+            android:padding="4dp"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miércoles"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textSize="11dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sábado"
+            android:textSize="11sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domingo"
+            android:textSize="11sp"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Espacio entre gráficos -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Layout para el gráfico circular y la leyenda -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Gráfico Circular -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:src="@drawable/circular"></ImageView>
+        <!-- Leyenda del gráfico circular -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"/>
+    </LinearLayout>
+
+    <!-- Botón para volver al menú -->
+    <Button
+        android:paddingTop="10dp"
+        android:id="@+id/boton_volver_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Volver" />
+</LinearLayout>
+

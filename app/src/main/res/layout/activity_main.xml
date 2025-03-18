@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:hint="DNI"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:hint="Contraseña"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#12FF00"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#0000ff"
+        android:text="REGISTRASE"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnVerCuentas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#F44336"
+        android:text="VER CUENTAS"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

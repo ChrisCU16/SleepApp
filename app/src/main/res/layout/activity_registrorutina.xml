@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Actividades"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <!-- Edad con un Spinner para seleccionar un rango de edades -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"/>
+
+        <Spinner
+            android:id="@+id/spinnerAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Horas de trabajo con SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horas de trabajo/estudio (h)" />
+
+        <SeekBar
+            android:id="@+id/seekBarWorkHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="16"/>
+
+        <TextView
+            android:id="@+id/textViewWorkHoursValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 h"/>
+
+        <!-- Tiempo de ejercicio con SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo de ejercicio (min)" />
+
+        <SeekBar
+            android:id="@+id/seekBarExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="120" />
+
+        <TextView
+            android:id="@+id/textViewExerciseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 min"/>
+
+        <!-- Actividades recreativas con SeekBar (en horas) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo de actividades recreativas (h)" />
+
+        <SeekBar
+            android:id="@+id/seekBarRecreationalActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10" />
+
+        <TextView
+            android:id="@+id/textViewRecreationalActivitiesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 h"/>
+
+        <!-- Consumo de café o estimulantes con SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumo de café o estimulantes (tazas)" />
+
+        <SeekBar
+            android:id="@+id/seekBarCaffeine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10" />
+
+        <TextView
+            android:id="@+id/textViewCaffeineValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 tazas"/>
+
+        <!-- Uso de pantallas con SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uso de pantallas (h)" />
+
+        <SeekBar
+            android:id="@+id/seekBarScreenTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12" />
+
+        <TextView
+            android:id="@+id/textViewScreenTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 h"/>
+
+        <!-- Niveles de estrés o ansiedad con SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niveles de estrés o ansiedad (1-10)" />
+
+        <SeekBar
+            android:id="@+id/seekBarStress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10" />
+
+        <TextView
+            android:id="@+id/textViewStressValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+        <!-- Botón de guardar -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+    </LinearLayout>
+</ScrollView>
